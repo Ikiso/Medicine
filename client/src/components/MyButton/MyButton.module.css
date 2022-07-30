@@ -1,0 +1,25 @@
+button {
+    background-color: #cacaff;
+    border: 1px solid #cacaff;
+    border-radius: 5px;
+    width: 48px;
+    height: 48px;
+    padding: 0 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.button__pagination + .button__pagination {
+    margin-left: 10px;
+}
+
+.button__pagination {
+    margin: 10px 0;
+}
+
+.button__current {
+    background-color: #a2a2ff;
+}

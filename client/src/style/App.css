@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    src: url('../fonts/raleway-v27-latin-regular.eot');
+    /*background: linear-gradient(to bottom left, #cacaff, #ffe0e0);*/
+
+}
+
+#root {
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: space-between;*/
+    /*align-items: flex-start;*/
+}
+
+.search {
+    width: 100%;
+    min-width: 350px;
+    padding: 15px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /*background: linear-gradient(to bottom left, #cacaff, #ffe0e0);*/
+}
+
+select, option {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+span {
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+select {
+    outline: none;
+    padding: 5px 0;
+    margin: 5px;
+    border: none;
+    border-bottom: 2px solid #cacaff;
+    cursor: pointer;
+}
+
+select:focus, select:active {
+    background-color: #eeeeee;
+}
+
+
+select:hover {
+    border-color: #a2a2ff;
+}
+
+.input__counter {
+    outline: none;
+    margin: 0 5px;
+    width: 50px;
+    height: 28px;
+    border: none;
+    border-bottom: 2px solid #cacaff;
+}
+
+
+p {
+    display: flex;
+    flex-direction: column;
+}
+
+.section__pagination {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section__add_file {
+    display: flex;
+}
+
+.section__status {
+    text-align: center;
+    color: #860000;
+}

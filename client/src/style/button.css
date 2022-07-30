@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #cacaff;
+    border: 1px solid #cacaff;
+    border-radius: 5px;
+    min-width: 48px;
+    min-height: 37px;
+    padding: 0 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.button__pagination + .button__pagination {
+    margin-left: 10px;
+}
+
+.button__pagination {
+    margin: 10px 0;
+}
+
+.button__current {
+    background-color: #a2a2ff;
+}
+
+.button__convert {
+    margin: 10px;
+}
+
+.input__add_file .form-group {
+    padding: 5px;
+    margin: 5px;
+}
+
+.input__add_file input[type=file] {
+    outline:0;
+    opacity:0;
+    pointer-events:none;
+    user-select:none;
+    display:block;
+    font-size: 0;
+}
+
+.input__add_file .label, .input__add_file .label__download {
+    width: 100px;
+    height: 37px;
+    border:2px dashed grey;
+    border-radius:5px;
+    display:block;
+    /*padding:1.2em;*/
+    /*transition:border 300ms ease;*/
+    cursor:pointer;
+    text-align:center;
+}
+
+.input__add_file .label__download {
+    border:2px solid #a2a2ff;
+    background-color: #a2a2ff;
+}
+
+.input__add_file__title {
+    color: gray;
+}
+
+.input__add_file__title__download {
+    color: #000;
+}
+
+.input__add_file .label:hover{border:2px solid #000}
+.input__add_file .label__download:hover{border:2px solid #a2a2ff}
+.input__add_file .label:hover i, .label:hover .input__add_file__title{color:#000}
