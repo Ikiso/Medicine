@@ -1,0 +1,18 @@
+:root {
+    --primary-color: #4ECCA3;
+    --primary-background: #A7A7A7;
+    --primary-color-text: #000000;
+
+    --second-color-gradient: linear-gradient(96.76deg, #3F4B6A 61.17%, rgba(85, 17, 70, 0.25) 91.31%);;
+    --second-color-text: #FFFFFF;
+    --second-color-title: #F9D56E;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: var(--primary-color-text);
+}
