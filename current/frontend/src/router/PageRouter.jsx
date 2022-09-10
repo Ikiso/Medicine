@@ -1,5 +1,5 @@
 import React from 'react';
-import {Navigate, Route, Routes} from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import Registration from "../pages/Registration";
 import Authorization from "../pages/Authorization";
@@ -10,6 +10,7 @@ import Profile from "../pages/Profile";
 
 const PageRouter = () => {
     const isLogin = false;
+
     return (
         <div>
             {isLogin

@@ -1,0 +1,16 @@
+.header {
+    background-color: var(--primary-color);
+}
+
+.header__inner {
+    max-width: 1100px;
+    margin: auto;
+    height: 60px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.nav {
+
+}
