@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext, useState} from 'react';
 import { Navigate, Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import Registration from "../pages/Registration";
@@ -7,10 +7,12 @@ import Documentation from "../pages/Documentation";
 import Parser from "../pages/Parser";
 import Data from "../pages/Data";
 import Profile from "../pages/Profile";
+import Context, { AuthenState } from "../Context";
 
 const PageRouter = () => {
-    const isLogin = false;
+    const {isLogin, setIsLogin} = AuthenState();
 
+    console.log(isLogin)
     return (
         <div>
             {isLogin
