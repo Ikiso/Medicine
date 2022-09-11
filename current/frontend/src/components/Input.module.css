@@ -1,0 +1,36 @@
+.text_field {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.label {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    color: var(--second-color-text);
+    font-size: 14px;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    padding: 7px;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+}
+
+.input::placeholder {
+    color: #212529;
+    opacity: 0.4;
+}
+
+.input:focus {
+    outline: 0;
+}
