@@ -4,7 +4,15 @@
     align-items: center;
 }
 
-.container {
+.container__author {
+    width: 400px;
+    height: 370px;
+    margin-top: calc((100vh - 620px) / 2);
+    background-color: var(--primary-background);
+    border-radius: 7px;
+}
+
+.container__regist {
     width: 400px;
     height: 500px;
     margin-top: calc((100vh - 620px) / 2);

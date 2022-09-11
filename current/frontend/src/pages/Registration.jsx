@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import Input from "../components/Input";
 import Button from "../components/Button";
-import classes from './Registration.module.css';
+import classes from './Authen.module.css';
 import sign_up from '../images/sign_up.png';
 
 const Registration = () => {
     return (
         <div className={classes.wrapper} >
-            <div className={classes.container}>
+            <div className={classes.container__regist}>
                 <div className={classes.images}>
                     <img src={sign_up} alt="sign_up"/>
                 </div>
@@ -20,7 +20,7 @@ const Registration = () => {
 
                 <div className={classes.button__send}>
                     <Button>Sign Up</Button>
-                    <Link className={classes.link} to="/authorization" >Have account?</Link>
+                    <Link className={classes.link} to="/authorization" >Do you have an account?</Link>
                 </div>
             </div>
         </div>
