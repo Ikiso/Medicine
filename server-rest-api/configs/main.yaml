@@ -1,0 +1,22 @@
+http:
+  port: 8000
+  maxHeaderBytes: 1
+  readTimeout: 10s
+  writeTimeout: 10s
+
+cache:
+  ttl: 60s
+
+auth:
+  hash_salt: "hash_salt"
+  signing_key: "signing_key"
+  token_ttl: 86400
+
+mongo:
+  databaseName: "medicine"
+
+email:
+  templates:
+    verification_email: "./templates/verification_email.html"
+  subjects:
+    verification_email: "Спасибо за регистрацию, %s!"
