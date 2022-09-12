@@ -5,7 +5,9 @@ const Authen = createContext(true);
 
 const Context = ({children}) => {
 
-    let [isLogin, setIsLogin] = useState(false);
+    let [isLogin, setIsLogin] = useState(true);
+
+
 
     return (
         <Authen.Provider

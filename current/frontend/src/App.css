@@ -1,0 +1,48 @@
+.parser {
+    display: flex;
+    align-items: center;
+}
+
+.table {
+    width: calc(100vw - 50px);
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar {
+    width: 50px;
+    height: calc(100vh - 60px);
+    background-color: var(--primary-background);
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar__content {
+    padding: 20px 0;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.li {
+    display: flex;
+    align-items: center;
+}
+
+.input_file {
+    visibility: hidden;
+    position: absolute;
+}
+
+.cell {
+    background-color: #eee;
+    padding: 5px;
+}
+
+.cell_title {
+    background-color: #ccc;
+    padding: 5px;
+}
