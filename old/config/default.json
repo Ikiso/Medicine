@@ -1,4 +1,0 @@
-{
-  "port": 5000,
-  "mongoUrl" : "mongodb+srv://admindb:ferimasv@cluster0.1cnio.mongodb.net/medicine?"
-}
