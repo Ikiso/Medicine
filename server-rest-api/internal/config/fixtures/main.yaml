@@ -1,0 +1,32 @@
+http:
+  port: 80
+  maxHeaderBytes: 1
+  readTimeout: 10s
+  writeTimeout: 10s
+
+cache:
+  ttl: 3600s
+
+mongo:
+  databaseName: testDatabase
+
+auth:
+  accessTokenTTL: 15m
+  refreshTokenTTL: 30m
+  verificationCodeLength: 10
+
+limiter:
+  rps: 10
+  burst: 2
+  ttl: 10m
+
+smtp:
+  host: "tsvve@bk.ru"
+  port: 587
+  from: "tsvve@bk.ru"
+
+email:
+  templates:
+    verification_email: "./templates/verification_email.html"
+  subjects:
+    verification_email: "Спасибо за регистрацию, %s!"

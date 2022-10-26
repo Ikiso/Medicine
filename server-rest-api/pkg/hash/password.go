@@ -5,21 +5,21 @@ import (
 	"fmt"
 )
 
-// PasswordHasher provides hashing logic to securely store passwords.
+// Password Hashes provides hashing logic to securely store passwords.
 type PasswordHash interface {
 	Hash(password string) (string, error)
 }
 
-// SHA1Hasher uses SHA1 to hash passwords with provided salt.
-type SHA1Hasher struct {
+// SHA1Harsher uses SHA1 to hash passwords with provided salt.
+type SHA1Harsher struct {
 	salt string
 }
 
-func NewSHA1hasher(salt string) *SHA1Hasher {
-	return &SHA1Hasher{salt: salt}
+func NewSHA1harsher(salt string) *SHA1Harsher {
+	return &SHA1Harsher{salt: salt}
 }
 
-func (h *SHA1Hasher) Hash(password string) (string, error) {
+func (h *SHA1Harsher) Hash(password string) (string, error) {
 	hash := sha1.New()
 
 	if _, err := hash.Write([]byte(password)); err != nil {

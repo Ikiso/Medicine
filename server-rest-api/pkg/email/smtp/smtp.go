@@ -6,19 +6,19 @@ import (
 	"github.com/pkg/errors"
 )
 
-type SMTPSender struct {
+type Sender struct {
 	from string
 	pass string
 	host string
 	port int
 }
 
-func SMTPNewSender(from, pass, host string, port int) (*SMTPSender, error) {
+func NewSender(from, pass, host string, port int) (*Sender, error) {
 	if !email.IsEmailValid(from) {
 		return nil, errors.New("invalid from email")
 	}
 
-	return &SMTPSender{
+	return &Sender{
 		from: from,
 		pass: pass,
 		host: host,
@@ -26,7 +26,7 @@ func SMTPNewSender(from, pass, host string, port int) (*SMTPSender, error) {
 	}, nil
 }
 
-func (s *SMTPSender) Send(input email.SendEmailInput) error {
+func (s *Sender) Send(input email.SendEmailInput) error {
 	if err := input.Validate(); err != nil {
 		return err
 	}
